@@ -22,7 +22,7 @@ namespace MvcMovie.Controllers
         // GET: Movies
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Movie.ToListAsync());
+            return View(await _context.Movie.ToListAsync()); 
         }
 
         // GET: Movies/Details/5
